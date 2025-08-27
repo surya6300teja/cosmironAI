@@ -9821,6 +9821,11 @@ blockquote {
   display: flex;
   position: relative;
 }
+a.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  opacity: 1; /* keep it looking normal */
+}
 
 .image-31 {
   width: 56vw;
@@ -29083,10 +29088,11 @@ blockquote {
   }
 
   .btn-padding {
-    padding: 2.5vw 7.292vw;
-    font-size: 2.33vw;
-    line-height: 100%;
-  }
+  /* Use much smaller vw values for mobile */
+  padding: 2vw 4vw;
+  font-size: 2.5vw; /* This was okay, but could also be smaller */
+  white-space: pre-wrap;
+}
 
   .button-modal {
     border-radius: 1.67vw;

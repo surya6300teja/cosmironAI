@@ -9349,6 +9349,12 @@ blockquote {
   display: flex;
 }
 
+a.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  opacity: 1; /* keep it looking normal */
+}
+
 .div-block-153 {
   flex-flow: column;
   justify-content: center;
@@ -35057,10 +35063,11 @@ blockquote {
   }
 
   .btn-padding {
-    white-space: pre-wrap;
-    padding: 4vw 9.33vw;
-    font-size: 1.73vw;
-  }
+  /* Use much smaller vw values for mobile */
+  padding: 2vw 4vw;
+  font-size: 2.5vw; /* This was okay, but could also be smaller */
+  white-space: pre-wrap;
+}
 
   .button-modal {
     border-radius: 2.67vw;

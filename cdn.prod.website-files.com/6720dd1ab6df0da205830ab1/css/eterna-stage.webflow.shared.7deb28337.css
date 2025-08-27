@@ -18271,6 +18271,12 @@ blockquote {
   position: absolute;
 }
 
+a.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  opacity: 1; /* keep it looking normal */
+}
+
 .div-block-430-big {
   grid-column-gap: 1.389vw;
   grid-row-gap: 1.389vw;

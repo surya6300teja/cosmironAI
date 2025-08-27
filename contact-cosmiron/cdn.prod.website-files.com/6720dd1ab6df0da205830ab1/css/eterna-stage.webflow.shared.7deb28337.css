@@ -9806,6 +9806,11 @@ blockquote {
   display: flex;
   position: relative;
 }
+a.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  opacity: 1; /* keep it looking normal */
+}
 
 .div-block-161 {
   z-index: 5;
@@ -29084,7 +29089,7 @@ blockquote {
 
   .btn-padding {
   /* Use much smaller vw values for mobile */
-  padding: 1vw 2vw;
+  padding: 2vw 4vw;
   font-size: 2.5vw; /* This was okay, but could also be smaller */
   white-space: pre-wrap;
 }

@@ -12899,6 +12899,12 @@ blockquote {
   position: absolute;
 }
 
+a.disabled-link {
+  pointer-events: none;
+  cursor: default;
+  opacity: 1; /* keep it looking normal */
+}
+
 .circle-small {
   z-index: 8;
   width: 20vw;
@@ -29087,10 +29093,11 @@ blockquote {
   }
 
   .btn-padding {
-    white-space: pre-wrap;
-    padding: 4vw 9.33vw;
-    font-size: 1.73vw;
-  }
+  /* Use much smaller vw values for mobile */
+  padding: 2vw 4vw;
+  font-size: 2.5vw; /* This was okay, but could also be smaller */
+  white-space: pre-wrap;
+}
 
   .button-modal {
     border-radius: 1.67vw;
